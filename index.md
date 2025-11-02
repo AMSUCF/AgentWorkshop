@@ -1,32 +1,59 @@
-AGENTIC AI & THE
-FUTURE OF
-DIGITAL MAKING
+# Agentic AI & the Future of Digital Making
 
-Anastasia Salter
+**Workshop by Anastasia Salter**
 
-Demos and Examples
+## About This Workshop
 
-Bibtex citations, markdown archives, and Canvas updates with Perplexity.AI's Comet -https://www.perplexity.ai/help-center/en/articles/12590157-what-is-education-pro?q=ed
+This workshop explores the emerging landscape of agentic AI systems and their transformative potential for digital making, creative production, and educational practice. Through hands-on demonstrations and curated resources, participants will engage with cutting-edge AI tools that are reshaping how we create, learn, and collaborate.
 
-Claude Code Web workflow - https://anastasiasalter.net/HumanitiesAI/weektwelve.html
+---
 
-Windows Command Prompt game generated with Claude Code / Sonnet 4.5 - https://anastasiasalter.net/ClaudeGameDemo/ and process - https://github.com/AMSUCF/ClaudeGameDemo/blob/claude/init-project-011CUbppTYHhowVH4yMSJvE8/PROCESS.md
+## Demos and Examples
 
-Agentic AI in Education Site and Text Game generated with Claude Code / Sonnet 4.5 - https://anastasiasalter.net/ClaudeEducationalDemo/ and process - https://github.com/AMSUCF/ClaudeEducationalDemo/blob/claude/init-project-011CUdfAbtzA4zFUnqcy3TAE/PROCESS.md
+### Educational Applications
 
-Claude Code - https://www.claude.com/product/claude-code
+- **[Perplexity.AI's Comet](https://www.perplexity.ai/help-center/en/articles/12590157-what-is-education-pro?q=ed)** - Bibtex citations, markdown archives, and Canvas updates for education
 
-WordPress MCP Adapter - https://github.com/WordPress/mcp-adapter
+- **[Claude Code Web Workflow](https://anastasiasalter.net/HumanitiesAI/weektwelve.html)** - Practical workflow for web development with Claude Code
 
-Further Reading
+- **[Windows Command Prompt Game Demo](https://anastasiasalter.net/ClaudeGameDemo/)** - Interactive game generated with Claude Code / Sonnet 4.5 ([process documentation](https://github.com/AMSUCF/ClaudeGameDemo/blob/claude/init-project-011CUbppTYHhowVH4yMSJvE8/PROCESS.md))
 
-Marc Watkins to Perplexity AI - https://marcwatkins.substack.com/p/an-open-letter-to-perplexity-ai
+- **[Agentic AI in Education Site](https://anastasiasalter.net/ClaudeEducationalDemo/)** - Educational site and text game generated with Claude Code / Sonnet 4.5 ([process documentation](https://github.com/AMSUCF/ClaudeEducationalDemo/blob/claude/init-project-011CUdfAbtzA4zFUnqcy3TAE/PROCESS.md))
 
-Simon Willison on agents - https://simonwillison.net/2025/Sep/18/agents/
-and on dangerously skip permissions - https://simonwillison.net/2025/Oct/22/living-dangerously-with-claude/
+### Tools and Platforms
 
-Humanities in the Age of AI Syllabus and Exercises - https://anastasiasalter.net/HumanitiesAI/
+- **[Claude Code](https://www.claude.com/product/claude-code)** - Anthropic's official CLI for Claude AI
 
-Shrivu Shankar on Claude Code features and best practices - https://blog.sshh.io/p/how-i-use-every-claude-code-feature
+- **[WordPress MCP Adapter](https://github.com/WordPress/mcp-adapter)** - Model Context Protocol adapter for WordPress
 
-Everyone Should be Using Claude Code - https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code
+- **[Awesome Claude Skills](https://github.com/BehiSecc/awesome-claude-skills)** - Curated collection of Claude skills and capabilities
+
+---
+
+## Further Reading
+
+### Critical Perspectives
+
+- **[Marc Watkins to Perplexity AI](https://marcwatkins.substack.com/p/an-open-letter-to-perplexity-ai)** - An open letter examining AI tool development and ethics
+
+- **[Simon Willison on Agents](https://simonwillison.net/2025/Sep/18/agents/)** - Understanding agent-based AI systems
+
+- **[Living Dangerously with Claude](https://simonwillison.net/2025/Oct/22/living-dangerously-with-claude/)** - On dangerously skipping permissions and AI safety considerations
+
+### Educational Resources
+
+- **[Humanities in the Age of AI](https://anastasiasalter.net/HumanitiesAI/)** - Complete syllabus and exercises for teaching with AI
+
+- **[How I Use Every Claude Code Feature](https://blog.sshh.io/p/how-i-use-every-claude-code-feature)** - Shrivu Shankar's comprehensive guide to Claude Code features and best practices
+
+- **[Everyone Should be Using Claude Code](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code)** - Lenny's Newsletter on the transformative potential of Claude Code
+
+### Technical Deep Dives
+
+- **[Why Anthropic's MCP is a Big Deal](https://blog.bytebytego.com/p/why-anthropics-mcp-is-a-big-deal)** - ByteByteGo analysis of the Model Context Protocol
+
+---
+
+## About the Facilitator
+
+**Anastasia Salter** brings extensive expertise in digital humanities, game studies, and AI in education. This workshop draws on her ongoing research and teaching in agentic AI systems and their applications in creative and scholarly practice.
