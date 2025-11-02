@@ -1,0 +1,408 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ============================================
+   TERMINATOR AESTHETICS - CUSTOM STYLESHEET
+   ============================================ */
+
+:root {
+  --terminator-red: #ff0000;
+  --terminator-orange: #ff4500;
+  --matrix-green: #00ff41;
+  --terminal-green: #0f0;
+  --cyber-blue: #00d9ff;
+  --dark-bg: #0a0a0a;
+  --darker-bg: #000000;
+  --text-glow: #00ff41;
+}
+
+/* ============================================
+   ANIMATED NETWORK BACKGROUND
+   ============================================ */
+
+.page-header {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a0000 50%, #000000 100%) !important;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 2px solid var(--terminator-red);
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 255, 65, 0.03) 2px, rgba(0, 255, 65, 0.03) 4px),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0, 255, 65, 0.03) 2px, rgba(0, 255, 65, 0.03) 4px);
+  animation: networkPulse 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+  z-index: 1;
+}
+
+@keyframes networkPulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Network nodes animation */
+.page-header .project-name,
+.page-header .project-tagline {
+  position: relative;
+  z-index: 10;
+}
+
+/* ============================================
+   MAIN HEADING - TERMINATOR STYLE
+   ============================================ */
+
+.project-name {
+  color: var(--terminator-red) !important;
+  text-shadow:
+    0 0 10px var(--terminator-red),
+    0 0 20px var(--terminator-red),
+    0 0 30px var(--terminator-orange),
+    0 0 40px var(--terminator-orange),
+    2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px;
+  animation: glowPulse 2s ease-in-out infinite alternate;
+  font-family: 'Courier New', monospace !important;
+  text-transform: uppercase;
+}
+
+@keyframes glowPulse {
+  from {
+    text-shadow:
+      0 0 10px var(--terminator-red),
+      0 0 20px var(--terminator-red),
+      0 0 30px var(--terminator-orange),
+      0 0 40px var(--terminator-orange),
+      2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  to {
+    text-shadow:
+      0 0 20px var(--terminator-red),
+      0 0 30px var(--terminator-red),
+      0 0 40px var(--terminator-orange),
+      0 0 50px var(--terminator-orange),
+      0 0 60px var(--terminator-red),
+      2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.project-tagline {
+  color: var(--matrix-green) !important;
+  text-shadow:
+    0 0 5px var(--matrix-green),
+    0 0 10px var(--matrix-green),
+    1px 1px 2px rgba(0, 0, 0, 0.8) !important;
+  font-family: 'Courier New', monospace !important;
+  opacity: 0.9;
+  animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 1; }
+}
+
+/* ============================================
+   BODY & CONTENT STYLING
+   ============================================ */
+
+body {
+  background: linear-gradient(180deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+  color: var(--matrix-green) !important;
+  font-family: 'Courier New', monospace;
+}
+
+.main-content {
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(0, 255, 65, 0.3);
+  box-shadow:
+    0 0 20px rgba(0, 255, 65, 0.2),
+    inset 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 2rem 4rem;
+  border-radius: 5px;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: var(--terminator-red) !important;
+  text-shadow:
+    0 0 10px var(--terminator-red),
+    0 0 20px rgba(255, 0, 0, 0.5);
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+  padding-bottom: 0.3em;
+  margin-top: 2rem;
+}
+
+.main-content h3 {
+  color: var(--cyber-blue) !important;
+  text-shadow:
+    0 0 8px var(--cyber-blue),
+    0 0 15px rgba(0, 217, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 217, 255, 0.3);
+}
+
+/* ============================================
+   LINKS - HUD INTERFACE STYLE
+   ============================================ */
+
+.main-content a {
+  color: var(--matrix-green) !important;
+  text-shadow: 0 0 5px var(--matrix-green);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--matrix-green);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.main-content a:hover {
+  color: var(--terminator-red) !important;
+  text-shadow:
+    0 0 10px var(--terminator-red),
+    0 0 20px var(--terminator-red);
+  border-bottom: 1px solid var(--terminator-red);
+  background: rgba(255, 0, 0, 0.1);
+  padding: 0 4px;
+}
+
+.main-content a strong {
+  font-weight: 700;
+  color: inherit;
+}
+
+/* ============================================
+   LISTS - TERMINAL STYLE
+   ============================================ */
+
+.main-content ul,
+.main-content ol {
+  padding-left: 2em;
+}
+
+.main-content li {
+  margin-bottom: 0.8em;
+  position: relative;
+  color: var(--matrix-green);
+}
+
+.main-content li::before {
+  content: "▸ ";
+  color: var(--terminator-red);
+  position: absolute;
+  left: -1.2em;
+  text-shadow: 0 0 5px var(--terminator-red);
+}
+
+.main-content ul li::before {
+  content: "▸ ";
+}
+
+/* ============================================
+   HORIZONTAL RULES - SCANLINES
+   ============================================ */
+
+.main-content hr {
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--terminator-red) 20%,
+    var(--terminator-red) 80%,
+    transparent 100%);
+  height: 2px;
+  border: none;
+  box-shadow: 0 0 10px var(--terminator-red);
+  margin: 2em 0;
+  animation: scanlineMove 2s ease-in-out infinite;
+}
+
+@keyframes scanlineMove {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* ============================================
+   CODE BLOCKS - TERMINAL INTERFACE
+   ============================================ */
+
+.main-content pre,
+.main-content code {
+  background: var(--darker-bg);
+  border: 1px solid var(--matrix-green);
+  color: var(--terminal-green);
+  font-family: 'Courier New', monospace;
+  box-shadow:
+    0 0 10px rgba(0, 255, 65, 0.3),
+    inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-content pre {
+  padding: 1em;
+  overflow-x: auto;
+  position: relative;
+}
+
+.main-content pre::before {
+  content: "$ ";
+  color: var(--terminator-red);
+  text-shadow: 0 0 5px var(--terminator-red);
+}
+
+/* ============================================
+   BLOCKQUOTES - SYSTEM MESSAGES
+   ============================================ */
+
+.main-content blockquote {
+  background: rgba(255, 0, 0, 0.05);
+  border-left: 4px solid var(--terminator-red);
+  color: var(--matrix-green);
+  padding: 1em;
+  margin: 1em 0;
+  box-shadow:
+    0 0 10px rgba(255, 0, 0, 0.2),
+    inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 1rem 1.5rem;
+  }
+
+  .project-name {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* ============================================
+   TERMINAL CURSOR EFFECT
+   ============================================ */
+
+.main-content p:first-of-type::after {
+  content: "";
+  display: inline-block;
+  width: 0.6em;
+  height: 1em;
+  background: var(--matrix-green);
+  margin-left: 0.2em;
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* ============================================
+   NEURAL NETWORK DOTS DECORATION
+   ============================================ */
+
+.page-header::before {
+  background-image:
+    radial-gradient(circle at 20% 30%, var(--terminator-red) 1px, transparent 1px),
+    radial-gradient(circle at 80% 40%, var(--matrix-green) 1px, transparent 1px),
+    radial-gradient(circle at 40% 70%, var(--cyber-blue) 1px, transparent 1px),
+    radial-gradient(circle at 90% 80%, var(--terminator-red) 1px, transparent 1px),
+    radial-gradient(circle at 10% 90%, var(--matrix-green) 1px, transparent 1px),
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 255, 65, 0.03) 2px, rgba(0, 255, 65, 0.03) 4px),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0, 255, 65, 0.03) 2px, rgba(0, 255, 65, 0.03) 4px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  animation: networkPulse 3s ease-in-out infinite, nodePulse 4s ease-in-out infinite;
+}
+
+@keyframes nodePulse {
+  0%, 100% {
+    background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+  50% {
+    background-position: 5% 5%, -5% -5%, 3% -3%, -3% 3%, 2% -2%, 0% 0%, 0% 0%;
+  }
+}
+
+/* ============================================
+   GLITCH EFFECT ON HOVER
+   ============================================ */
+
+.main-content h1:hover,
+.main-content h2:hover {
+  animation: glitch 0.3s linear infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* ============================================
+   SCROLLBAR STYLING
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: var(--darker-bg);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--darker-bg);
+  border: 1px solid rgba(0, 255, 65, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--terminator-red), var(--terminator-orange));
+  border-radius: 6px;
+  box-shadow: 0 0 10px var(--terminator-red);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--terminator-red);
+  box-shadow: 0 0 20px var(--terminator-red);
+}
