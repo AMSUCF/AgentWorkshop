@@ -28,7 +28,7 @@ This workshop explores agentic AI as a cultural technology reshaping software, i
 
 - **[Claude Code](https://www.claude.com/product/claude-code)** - Anthropic's official CLI for Claude AI
 
-- **[WordPress MCP Adapter](https://github.com/WordPress/mcp-adapter)** - Model Context Protocol adapter for WordPress
+- **[WordPress MCP Adapter](https://meowapps.com/ai-engine/)** - Model Context Protocol adapter for WordPress
 
 - **[Awesome Claude Skills](https://github.com/BehiSecc/awesome-claude-skills)** - Curated collection of Claude skills and capabilities
 
