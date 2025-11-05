@@ -42,6 +42,8 @@ This workshop explores agentic AI as a cultural technology reshaping software, i
 
 - **[Living Dangerously with Claude](https://simonwillison.net/2025/Oct/22/living-dangerously-with-claude/)** - On dangerously skipping permissions and AI safety considerations
 
+- **[MLA Statement on Educational Technologies and AI Agents](https://www.mla.org/Resources/Advocacy/Executive-Council-Actions/2025/Statement-on-Educational-Technologies-and-AI-Agents)** - Modern Language Association guidance on AI agents in educational contexts
+
 - **[Humanities in the Age of AI](https://anastasiasalter.net/HumanitiesAI/)** - Complete syllabus and exercises for teaching with AI
 
 - **[How I Use Every Claude Code Feature](https://blog.sshh.io/p/how-i-use-every-claude-code-feature)** - Shrivu Shankar's comprehensive guide to Claude Code features and best practices
