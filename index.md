@@ -56,3 +56,35 @@ This workshop explores agentic AI as a cultural technology reshaping software, i
 
 - **[Why Anthropic's MCP is a Big Deal](https://blog.bytebytego.com/p/why-anthropics-mcp-is-a-big-deal)** - ByteByteGo analysis of the Model Context Protocol
 
+---
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+  <span id="theme-label">Light Mode</span>
+</button>
+
+<script>
+  // Theme toggle functionality with localStorage persistence
+  function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeLabel(newTheme);
+  }
+
+  function updateThemeLabel(theme) {
+    const label = document.getElementById('theme-label');
+    if (label) {
+      label.textContent = theme === 'light' ? 'Dark Mode' : 'Light Mode';
+    }
+  }
+
+  // Load theme from localStorage on page load
+  (function() {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeLabel(savedTheme);
+  })();
+</script>
