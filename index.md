@@ -44,6 +44,8 @@ This workshop explores agentic AI as a cultural technology reshaping software, i
 
 - **[MLA Statement on Educational Technologies and AI Agents](https://www.mla.org/Resources/Advocacy/Executive-Council-Actions/2025/Statement-on-Educational-Technologies-and-AI-Agents)** - Modern Language Association guidance on AI agents in educational contexts
 
+- **[AI Is the Future. Higher Ed Should Shape It](https://www.chronicle.com/article/ai-is-the-future-higher-ed-should-shape-it)** - Chronicle of Higher Education on the role of higher education in shaping AI's development and implementation
+
 - **[Humanities in the Age of AI](https://anastasiasalter.net/HumanitiesAI/)** - Complete syllabus and exercises for teaching with AI
 
 - **[How I Use Every Claude Code Feature](https://blog.sshh.io/p/how-i-use-every-claude-code-feature)** - Shrivu Shankar's comprehensive guide to Claude Code features and best practices
