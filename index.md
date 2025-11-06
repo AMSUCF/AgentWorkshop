@@ -46,6 +46,8 @@ This workshop explores agentic AI as a cultural technology reshaping software, i
 
 - **[AI Is the Future. Higher Ed Should Shape It](https://www.chronicle.com/article/ai-is-the-future-higher-ed-should-shape-it)** - Chronicle of Higher Education on the role of higher education in shaping AI's development and implementation
 
+- **[How AI Is Changing Higher Education](https://www.chronicle.com/article/how-ai-is-changing-higher-education)** - Chronicle of Higher Education article examining the transformative impact of AI on colleges and universities
+
 - **[Humanities in the Age of AI](https://anastasiasalter.net/HumanitiesAI/)** - Complete syllabus and exercises for teaching with AI
 
 - **[How I Use Every Claude Code Feature](https://blog.sshh.io/p/how-i-use-every-claude-code-feature)** - Shrivu Shankar's comprehensive guide to Claude Code features and best practices
